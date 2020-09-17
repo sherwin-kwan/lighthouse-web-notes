@@ -43,3 +43,5 @@
 * git commit: move from staging area to local repo
 * git push: move from local repo to remote repo
 * git pull: move from remote repo to local repo
+
+* You can use SSH instead of HTTPS connection to prevent having to type your password every time
