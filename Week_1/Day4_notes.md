@@ -23,3 +23,8 @@ that loop. However, declaring *var X* inside a loop makes it accessible in the w
 * In real life, you'll rarely be coding anything from scratch. You'll be asked to improve existing code.
 * Because time is short, you'll normally just find a small number of related functions and build on them, without understanding
 what the rest of the code does. This is why callbacks and really valuable.
+
+
+### Trivia
+
+* JavaScript is a language with a standard specification, but there are multiple engines or interpreters that actually read JavaScript and make the computer follow the code. (Mozilla would have one, WebKit would have one, Node is yet another ... but all should follow the spec. Where the spec is unclear, they may produce different behaviour)
