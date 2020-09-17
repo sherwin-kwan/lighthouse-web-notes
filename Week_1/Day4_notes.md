@@ -2,13 +2,18 @@
 
 ### Callback Functions
 
-* It's an anonymous function, usually expressed with arrow notation, that is passed as an argument to another function
+* Terminology: a *higher-order function* is a function which takes another function as an argument
+* A *callback* is the function which is placed within a higher-order function as an argument
+* Callback is an anonymous function, usually expressed with arrow notation, that is passed as an argument to another function
 * Note: This is possible because functions are objects in Javascript which can do everything that other objects can do
 * They're useful because you can make functions modular - you can make a function call a variety of other functions
 * Example: the "assertEqual" function can take a callback so it can call any number of other functions (checking if arrays,
 objects, or primitives are equal)
 * If we're making a 2D game, and we have a number of different functions to print out sprites, we can have a generic UI printing function
 which calls the other functions as callbacks.
+* Higher-order functions are valuable because:
+  * Easier to reason through, so less prone to bugs
+  * Makes functions modular enough so you can re-use more code
 
 ### Scope
 
