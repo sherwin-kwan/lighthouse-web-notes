@@ -34,3 +34,4 @@
 ### Hafiz's Tips
 
 * To check if *X* is part of an array *Y*, use the predicate (Y.indexOf(X) > -1)
+* Feel free to write code with non-existent functions first, planning to write them later (it will cause an error so you won't forget to write it later!) - but it's like just-in-time manufacturing, it ensures that all the functions you write will have a purpose, a "next process" so to speak
