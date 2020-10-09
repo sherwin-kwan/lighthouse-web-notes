@@ -10,5 +10,5 @@ In this repository you will find [Sherwin](https://github.com/sherwin-kwan)'s no
 ## Table of Contents
 
 * [Week 1](./Week_1)
-  * [Day 1](./Week_1/Day_1)
-  * [Day 2](./Week_1/Day_2)
+  * [Day 1](./Week_1/Day_1.md)
+  * [Day 2](./Week_1/Day_2.md)
