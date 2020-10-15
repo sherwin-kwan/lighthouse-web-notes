@@ -32,3 +32,12 @@ In this repository you will find [Sherwin](https://github.com/sherwin-kwan)'s no
   * [Day 17](/Week_4/Day17_notes.md)
   * [Day 18](/Week_4/Day18_notes.md)
   * [Day 19](/Week_4/Day19_notes.md)
+
+* [Week 5](./Week_5)
+  * [Day 21](/Week_5/Day21_notes.md)
+  * [Day 22](/Week_5/Day22_notes.md)
+  * [Day 23](/Week_5/Day23_notes.md)
+  
+## Other Resources
+
+* [Career Search Hub](https://lighthouse-labs.github.io/CareerSearchHub/)
