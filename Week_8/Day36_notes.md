@@ -38,13 +38,28 @@
 
 * *render* function: allows you to render React components which you can evaluate in a test
 * *get....* and *query...* methods: the difference is that get throws an error if the node is not found in the DOM, whereas query just returns null if the node is not found. 
-* *find...* methods: for asynchronous code, sets up a listener and tells Jest to expect a node to appear at some future time
+* *find...* methods: for asynchronous code, returns a promise which resolves to a node when it appears (i.e. tells Jest to expect a node to appear at some future time)
+* *prettyDOM*: a method that prints the entire DOM so you can debug without opening a browser
+* *debug*: also shows the DOM
 * Two ways to import a method from this library, if we do:
 ```js
 const { container, getByTestId } = render('<Game />');
 ```
-* This getByTestId automatically knows which container to look in (not true for a global import)
+* This getByTestId automatically knows which container to look in (not true for a global import), or in technical terms, it's *bound*
 * *fireEvent*: allows an event (like user clicking a button) to be tested
+```js
+findByText('Carol', {exact: false})
+```
+* *exact: false* tells Jest not to expect an exact match
+
+### Mocking
+
+* **Never test against live data.** For example, do not test that a real customer, "Mary Jane", has the high score. Your test shouldn't fail because a customer deletes their account!
+* Instead, a fake database with known data should be used for testing. This is called *mocking*
+* fn() is a Jest method which creates a mock function
+* mock('libraryName') is a Jest method which creates a mock library. Every time, say, axios.get() appears in the real code, this mock version of axios will be used instead.
+* *axios.get.mockResolvedValueOnce({data: abcde})*: use this to create a mock API call, which will output the object *abcde* as the data response
+
 
 
 ### Andy's Tips and Advice
