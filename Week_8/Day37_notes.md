@@ -53,3 +53,33 @@ Link is another component from react-router-dom, which can be done to create "li
 ## Travis's Tips
 
 * *screens* folder: make one for a page, and place components onto that page. A good way of preventing all your routes from clogging up your main app.js page
+* Place the routes in each screens file in an array, and then use the spread operator to put them into one big array in the main component <Application>
+
+## Context
+
+* by convention, we throw these in a separate folder called "context"
+```js
+import { createContext } from React;
+const dogContext = createContext(['Rufus','Lupus','Fluffy']);
+// This is the source of our single global state
+export default dogContext;
+
+```
+
+* Then in a different file:
+
+```js
+import React, { useContext } from React;
+import dogContext from '../contexts/dogContext';
+
+const Dogs = () => {
+  const dogList = useContext(dogContext);
+  return (
+    <div>
+      dogList.map((dog) => {
+        return <h2>{dog.name}</h2>
+      });
+    </div>
+  )
+}
+```
