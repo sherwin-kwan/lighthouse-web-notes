@@ -13,12 +13,12 @@
 rails new my_api --api
 ```
 * Or to modify an existing Rails app to be API-only, put this in the Application class:
-```
+```ruby
 config.api_only = true
 ```
 * This will generate a Rails app without "views". You will only have the ActiveRecord/models part of the app
 * Then, when you need to send data to the front end, do:
-```
+```ruby
 render json: @object_name
 ```
 This will send JSON in response to any HTTP request at that route
